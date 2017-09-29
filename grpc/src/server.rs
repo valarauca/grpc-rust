@@ -122,7 +122,7 @@ pub struct Server {
 
 impl Server {
     pub fn local_addr(&self) -> &SocketAddr {
-        self.server.local_addr()
+        self.server.inet_addr()
     }
 
     pub fn is_alive(&self) -> bool {
